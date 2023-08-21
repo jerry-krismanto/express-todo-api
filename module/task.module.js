@@ -35,7 +35,7 @@ class _task {
       .then((data) => {
         return {
           status: true,
-          data,
+          data: [data.insertId, sql.params[0]],
         };
       })
       .catch((error) => {
@@ -126,7 +126,7 @@ class _task {
       .then((data) => {
         return {
           status: true,
-          data,
+          data: [sql.params[1], sql.params[0]],
         };
       })
       .catch((error) => {

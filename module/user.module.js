@@ -104,7 +104,7 @@ class _user {
     }
   }
 
-  async get(data) {
+  get(data) {
     // Validate data
     const schema = Joi.object({
       id: Joi.string(),
